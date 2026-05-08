@@ -1,0 +1,473 @@
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>PRASKANAM - Pramuka SMK Negeri 6 Jember</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#2f312f",
+                    "on-primary-fixed": "#2b1611",
+                    "on-background": "#1a1c1b",
+                    "surface-container-low": "#f4f4f1",
+                    "surface-bright": "#f9f9f6",
+                    "primary": "#361f1a",
+                    "secondary-container": "#fdd400",
+                    "outline": "#827471",
+                    "on-error": "#ffffff",
+                    "primary-fixed-dim": "#e5beb5",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#e8e8e5",
+                    "primary-fixed": "#ffdad2",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed-variant": "#5c403a",
+                    "on-tertiary-fixed-variant": "#005312",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-container": "#c19c94",
+                    "background": "#f9f9f6",
+                    "surface-tint": "#755750",
+                    "primary-container": "#4e342e",
+                    "on-secondary-fixed": "#221b00",
+                    "surface": "#f9f9f6",
+                    "inverse-on-surface": "#f1f1ee",
+                    "on-primary": "#ffffff",
+                    "surface-container-highest": "#e2e3e0",
+                    "secondary-fixed-dim": "#e9c400",
+                    "surface-variant": "#e2e2e0",
+                    "on-secondary-fixed-variant": "#544600",
+                    "on-surface-variant": "#504442",
+                    "on-surface": "#1a1c1b",
+                    "on-tertiary": "#ffffff",
+                    "surface-dim": "#dadad7",
+                    "secondary-fixed": "#ffe170",
+                    "on-tertiary-fixed": "#002204",
+                    "on-tertiary-container": "#66b664",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#88d982",
+                    "surface-container": "#eeeeeb",
+                    "inverse-primary": "#e5beb5",
+                    "on-secondary-container": "#6f5c00",
+                    "error-container": "#ffdad6",
+                    "secondary": "#705d00",
+                    "tertiary-container": "#00450d",
+                    "tertiary-fixed": "#a3f69c",
+                    "tertiary": "#002c06",
+                    "outline-variant": "#d4c3bf"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "display": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+        }
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<!-- TopAppBar -->
+<nav class="bg-[#361F1A] fixed top-0 z-50 w-full docked full-width shadow-none">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<img alt="WOSM Logo" class="h-8 w-auto object-contain" src="https://i.ibb.co.com/PsdZs2SX/Whats-App-Image-2026-05-04-at-19-54-29.jpg">
+<span class="font-['Plus_Jakarta_Sans'] font-extrabold tracking-tighter text-2xl text-[#FDD400]">Pramuka SMK Negeri 6 JEMBER</span>
+</div>
+<div class="flex items-center gap-4">
+<span id="visitor-count" class="text-white text-sm font-medium">Jumlah Pengunjung: <span id="count">0</span></span>
+<button class="text-white/80 hover:text-white transition-colors duration-300 scale-95 active:opacity-80 transition-transform">
+<span class="material-symbols-outlined" data-icon="menu"></span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative h-[707px] flex items-end pb-20 overflow-hidden bg-primary">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60" data-alt="high-angle wide shot of scout members in uniform standing in disciplined formation during a sunrise ceremony with dramatic golden lighting" src="https://i.ibb.co.com/27vX08wW/Whats-App-Image-2026-04-27-at-21-36-48.jpg" width="500" height="300">
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent"></div>
+<div class="relative px-8 w-full max-w-4xl">
+<p class="font-display font-bold tracking-widest text-secondary-container mb-2 text-sm uppercase">Pramuka SMK Negeri 6 Jember</p>
+<h1 class="font-display font-extrabold text-6xl text-white tracking-tighter leading-none mb-4">PRASKANAM</h1>
+<div class="flex items-center gap-4">
+<div class="h-[2px] w-12 bg-secondary-container"></div>
+<h2 class="font-display font-bold text-2xl text-secondary-fixed-dim italic">ARJUNA-SRIKANDI</h2>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="bg-surface-container-low py-24 px-8">
+<div class="max-w-4xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+<div class="flex-1">
+<h2 class="font-display font-extrabold text-4xl text-primary tracking-tight mb-8">Tentang Pramuka <span class="text-secondary">SMK Negeri 6 Jember</span></h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed">
+<p class="text-lg">Dewan ambalan di SMK Negeri 6 jember mulai dari tahun 1982, akan tetapi belum ada nama pada saat itu atau hanya dewan penegak saja. pada tahun 2021 pramuka di smkn 6 jember mendapatkan identitas nya dengan nama ARJUNA SRIKANDI, pada tahun 2022 mulai tercipta logo ambalan tersebut akan tetapi masi belum ada adat pada saat itu, pada tahun 2024 ini tercipta adat-adat mulai dari upacara adat,senjata adat,dan juga makanan adat</p>
+<p class=""><br></p>
+</div>
+</div>
+<div class="flex-1 w-full h-64 bg-surface-container rounded-xl overflow-hidden relative shadow-xl">
+<img class="w-full h-full object-cover" data-alt="vintage style photograph of scout uniform accessories, ropes, and a compass arranged neatly on a dark wooden surface" src="https://i.ibb.co.com/nsBvbH3F/Whats-App-Image-2026-04-27-at-21-36-48.jpg">
+</div>
+</div>
+</section>
+<!-- Routine Activities -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<p class="text-secondary font-bold tracking-widest uppercase text-xs mb-2">Programs</p>
+<h2 class="font-display font-extrabold text-4xl text-primary tracking-tight">Kegiatan</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!--pp-->
+    <div class="group bg-surface-container-lowest p-10 rounded-xl hover:bg-primary transition-all duration-500 relative overflow-hidden">
+<div class="absolute inset-0 z-0"><img alt="Latihan Rutin Background" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://i.ibb.co.com/0ymmqL7x/image.png" alt="image" alt="image"><div class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors duration-500"></div></div>
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-12">
+<span class="material-symbols-outlined text-4xl text-secondary group-hover:text-secondary-container" data-icon="groups">groups</span>
+<span class="font-mono text-primary/20 group-hover:text-white/20 text-4xl font-bold"></span>
+</div>
+<h3 class="font-display font-bold text-2xl text-primary group-hover:text-white mb-4">lomba perticap</h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-1.5 bg-surface-container-high rounded-full text-sm font-semibold text-primary group-hover:bg-white/10 group-hover:text-white"></span>
+<span class="px-4 py-1.5 bg-surface-container-high rounded-full text-sm font-semibold text-primary group-hover:bg-white/10 group-hover:text-white"><br></span>
+</div>
+</div></div>
+    <!--p-->
+    <div class="group bg-surface-container-lowest p-10 rounded-xl hover:bg-primary transition-all duration-500 relative overflow-hidden">
+<div class="absolute inset-0 z-0"><img alt="Latihan Rutin Background" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://i.ibb.co.com/N496vy6/image.png"><div class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors duration-500"></div></div>
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-12">
+<span class="material-symbols-outlined text-4xl text-secondary group-hover:text-secondary-container" data-icon="groups">groups</span>
+<span class="font-mono text-primary/20 group-hover:text-white/20 text-4xl font-bold"></span>
+</div>
+<h3 class="font-display font-bold text-2xl text-primary group-hover:text-white mb-4">Latihan Rutin</h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-1.5 bg-surface-container-high rounded-full text-sm font-semibold text-primary group-hover:bg-white/10 group-hover:text-white">rabu</span>
+<span class="px-4 py-1.5 bg-surface-container-high rounded-full text-sm font-semibold text-primary group-hover:bg-white/10 group-hover:text-white"><br></span>
+</div>
+</div></div>
+<!-- Activity Card 1 -->
+<div class="group bg-surface-container-lowest p-10 rounded-xl hover:bg-primary transition-all duration-500 relative overflow-hidden">
+<div class="absolute inset-0 z-0"><img alt="Latihan Rutin Background" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://i.ibb.co.com/CZk72C6/image.png" alt="image"><div class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors duration-500"></div></div>
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-12">
+<span class="material-symbols-outlined text-4xl text-secondary group-hover:text-secondary-container" data-icon="groups">groups</span>
+<span class="font-mono text-primary/20 group-hover:text-white/20 text-4xl font-bold"></span>
+</div>
+<h3 class="font-display font-bold text-2xl text-primary group-hover:text-white mb-4">latihan gabungan</h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-1.5 bg-surface-container-high rounded-full text-sm font-semibold text-primary group-hover:bg-white/10 group-hover:text-white"></span>
+<span class="px-4 py-1.5 bg-surface-container-high rounded-full text-sm font-semibold text-primary group-hover:bg-white/10 group-hover:text-white"><br></span>
+</div>
+</div></div>
+<!-- Activity Card 2 -->
+<div class="group bg-surface-container-lowest p-10 rounded-xl hover:bg-primary transition-all duration-500 relative overflow-hidden">
+<div class="absolute inset-0 z-0"><img alt="Pramuka Wajib Background" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://i.ibb.co.com/d4xs13xn/image.png"><div class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors duration-500"></div></div>
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-12">
+<span class="material-symbols-outlined text-4xl text-secondary group-hover:text-secondary-container" data-icon="school">school</span>
+<span class="font-mono text-primary/20 group-hover:text-white/20 text-4xl font-bold"></span>
+</div>
+<h3 class="font-display font-bold text-2xl text-primary group-hover:text-white mb-4">Pramuka Wajib</h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-1.5 bg-surface-container-high rounded-full text-sm font-semibold text-primary group-hover:bg-white/10 group-hover:text-white">kelas x dan kelas xi</span>
+<span class="px-4 py-1.5 bg-surface-container-high rounded-full text-sm font-semibold text-primary group-hover:bg-white/10 group-hover:text-white">hari jum'at</span>
+</div>
+</div></div>
+<!-- Activity Card 3 -->
+<div class="group bg-surface-container-lowest p-10 rounded-xl hover:bg-primary transition-all duration-500 relative overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Bakti Sosial Background" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://i.ibb.co.com/bRYY5t2N/image.png">
+<div class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors duration-500"></div>
+</div>
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-12">
+<span class="material-symbols-outlined text-4xl text-secondary group-hover:text-secondary-container" data-icon="volunteer_activism">volunteer_activism</span>
+<span class="font-mono text-primary/20 group-hover:text-white/20 text-4xl font-bold"></span>
+</div>
+<h3 class="font-display font-bold text-2xl text-primary group-hover:text-white mb-4">Bakti Sosial</h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-1.5 bg-surface-container-high rounded-full text-sm font-semibold text-primary group-hover:bg-white/10 group-hover:text-white">Masyarakat</span>
+</div>
+</div>
+</div><!-- Activity Card 4 -->
+<div class="group bg-surface-container-lowest p-10 rounded-xl hover:bg-primary transition-all duration-500 relative overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Pelantikan Bantara Background" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://i.ibb.co.com/MxpdX717/image.png">
+<div class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors duration-500"></div>
+</div>
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-12">
+<span class="material-symbols-outlined text-4xl text-secondary group-hover:text-secondary-container" data-icon="military_tech">military_tech</span>
+<span class="font-mono text-primary/20 group-hover:text-white/20 text-4xl font-bold"></span>
+</div>
+<h3 class="font-display font-bold text-2xl text-primary group-hover:text-white mb-4">Pelantikan Bantara</h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-1.5 bg-surface-container-high rounded-full text-sm font-semibold text-primary group-hover:bg-white/10 group-hover:text-white"><br></span>
+</div>
+</div>
+</div></div>
+</div>
+</section>
+<!-- Detailed Description Section -->
+<section class="py-24 px-8 bg-surface-container-highest/30">
+<div class="max-w-4xl mx-auto text-center">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6" data-icon="diversity_3">diversity_3</span>
+<h2 class="font-display font-extrabold text-4xl text-primary mb-8 tracking-tight">Wadah Pembentukan Karakter</h2>
+<div class="space-y-6 text-on-surface-variant text-lg leading-relaxed text-center">
+<p class="">
+                    PRASKANAM (Pramuka SMKN 6 Jember) hadir sebagai pusat pengembangan diri bagi seluruh siswa SMKN 6 Jember. Kami percaya bahwa kepanduan adalah instrumen terbaik dalam membangun karakter yang tangguh, berintegritas, dan siap menghadapi tantangan masa depan.
+                </p>
+<p class="">
+                    Di sini, anggota tidak hanya mempelajari keterampilan teknis pramuka (scout skills) seperti navigasi, tali-temali, dan pertolongan pertama, tetapi juga ditempa melalui pengalaman kepemimpinan langsung. Kami mendorong setiap individu untuk menemukan potensi terbaik mereka dalam lingkungan yang suportif dan penuh kekeluargaan.
+                </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8">
+<div class="p-6 bg-surface rounded-2xl shadow-sm">
+<span class="material-symbols-outlined text-secondary mb-2" data-icon="military_tech">military_tech</span>
+<h4 class="font-bold text-primary mb-2">pendidikan karakter</h4>
+<p class="text-sm">Menanamkan nilai-nilai Dasa Darma dalam kehidupan sehari-hari.</p>
+</div>
+<div class="p-6 bg-surface rounded-2xl shadow-sm">
+<span class="material-symbols-outlined text-secondary mb-2" data-icon="construction">construction</span>
+<h4 class="font-bold text-primary mb-2">keterampilan pramuka</h4>
+<p class="text-sm">Penguasaan teknik kepramukaan yang aplikatif dan modern.</p>
+</div>
+<div class="p-6 bg-surface rounded-2xl shadow-sm">
+<span class="material-symbols-outlined text-secondary mb-2" data-icon="leaderboard">leaderboard</span>
+<h4 class="font-bold text-primary mb-2">kepemimpinan</h4>
+<p class="text-sm">Melatih tanggung jawab dan kemampuan manajerial organisasi.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Organizational Structure -->
+<section class="py-24 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-display font-extrabold text-5xl text-primary tracking-tighter mb-4">Struktur Organisasi</h2>
+<div class="h-1.5 w-24 bg-secondary mx-auto"></div>
+</div>
+<!-- Kamabigus -->
+<div class="mb-24">
+<h3 class="font-display font-bold text-center text-primary/50 uppercase tracking-widest text-sm mb-12">Kamabigus</h3>
+<div class="flex justify-center">
+<div class="w-full max-w-[320px] text-center group">
+<div class="aspect-[3/4] mb-6 rounded-2xl overflow-hidden bg-surface-container-highest shadow-lg transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="professional portrait of the Kamabigus in uniform" src="https://i.ibb.co.com/zTXnDcns/ey-Jp-ZCI6-Im1f-Njlm-Yj-Rm-OTE1-YTk0-ODE5-MWI3-NGJk-Zjg3-NGVh-Mj-M3-Nz-M6c2-Vka-W1lbn-Q6-Ly82-Yjg1-Y2-My-N2-Fk-Yz.jpg">
+</div>
+<h4 class="font-display font-bold text-xl text-primary">&nbsp;EVI SILFIANA, S.PD. MM</h4>
+<p class="text-sm text-secondary font-medium mt-1">Kepala Sekolah</p>
+</div>
+</div>
+</div>
+<!-- Pembina -->
+<div class="mb-24">
+<h3 class="font-display font-bold text-center text-primary/50 uppercase tracking-widest text-sm mb-12">Pembina</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12">
+<div class="text-center group">
+<div class="aspect-[3/4] mb-6 rounded-2xl overflow-hidden bg-surface-container-highest shadow-lg transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="professional portrait of a male scout advisor in uniform" src="https://i.ibb.co.com/jvvms83y/Whats-App-Image-2026-05-04-at-19-54-11.jpg">
+</div>
+<h4 class="font-display font-bold text-lg text-primary">MISBAHUL ULUM, S.Pd.</h4>
+</div>
+<div class="text-center group">
+<div class="aspect-[3/4] mb-6 rounded-2xl overflow-hidden bg-surface-container-highest shadow-lg transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="professional portrait of a female scout advisor in uniform" src="https://i.ibb.co.com/6RBbCHkB/image.png">
+</div>
+<h4 class="font-display font-bold text-lg text-primary">AYU RHEINA FIRDAUZI, S.Pd.</h4>
+</div>
+<div class="text-center group">
+<div class="aspect-[3/4] mb-6 rounded-2xl overflow-hidden bg-surface-container-highest shadow-lg transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="formal portrait of a male scout leader" src="https://i.ibb.co.com/397Yk46G/image.png">
+</div>
+<h4 class="font-display font-bold text-lg text-primary">NOVITA ELOK PERMATA SARI, S.Pd.</h4>
+</div>
+<div class="text-center group">
+<div class="aspect-[3/4] mb-6 rounded-2xl overflow-hidden bg-surface-container-highest shadow-lg transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="professional portrait of a female teacher in scout uniform" src="https://i.ibb.co.com/3ZtcjR1/image.png">
+</div>
+<h4 class="font-display font-bold text-lg text-primary">ARIES FATCHURROCHIM, S.Pd.	</h4>
+</div>
+</div>
+</div>
+<!-- Pradana & Pemangku Adat -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-24">
+<!-- Pradana -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm border border-outline-variant/10">
+<h3 class="font-display font-bold text-primary text-xl mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="star" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                        Pradana
+                    </h3>
+<div class="grid grid-cols-2 gap-8">
+<div class="text-center group">
+<div class="aspect-[3/4] mb-4 rounded-2xl overflow-hidden bg-surface-container shadow-inner transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="headshot of male pradana" src="https://i.ibb.co.com/wF5dGF8D/Whats-App-Image-2026-05-04-at-19-53-43.jpg">
+</div>
+<p class="text-xs font-bold text-secondary-fixed-dim uppercase mb-1">Putra</p>
+<h4 class="font-display font-bold text-primary">AHMAD DENIS S.</h4>
+</div>
+<div class="text-center group">
+<div class="aspect-[3/4] mb-4 rounded-2xl overflow-hidden bg-surface-container shadow-inner transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="headshot of female pradana" src="https://i.ibb.co.com/SDJ15Cft/Whats-App-Image-2026-05-04-at-19-54-15.jpg">
+</div>
+<p class="text-xs font-bold text-secondary-fixed-dim uppercase mb-1">Putri</p>
+<h4 class="font-display font-bold text-primary">SAHILA SALSABELA</h4>
+</div>
+</div>
+</div>
+<!-- Pemangku Adat -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm border border-outline-variant/10">
+<h3 class="font-display font-bold text-primary text-xl mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="gavel" style="font-variation-settings: &quot;FILL&quot; 1;">gavel</span>
+                        Pemangku Adat
+                    </h3>
+<div class="grid grid-cols-2 gap-8">
+<div class="text-center group">
+<div class="aspect-[3/4] mb-4 rounded-2xl overflow-hidden bg-surface-container shadow-inner transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="headshot of male pemangku adat" src="https://i.ibb.co.com/1JLjmBw4/Whats-App-Image-2026-05-04-at-19-54-05.jpg">
+</div>
+<p class="text-xs font-bold text-secondary-fixed-dim uppercase mb-1">Putra</p>
+<h4 class="font-display font-bold text-primary">FADILATUS SHOLEH</h4>
+</div>
+<div class="text-center group">
+<div class="aspect-[3/4] mb-4 rounded-2xl overflow-hidden bg-surface-container shadow-inner transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="headshot of female pemangku adat" src="https://i.ibb.co.com/fz212nvX/Whats-App-Image-2026-05-04-at-19-54-38.jpg">
+</div>
+<p class="text-xs font-bold text-secondary-fixed-dim uppercase mb-1">Putri</p>
+<h4 class="font-display font-bold text-primary">AINUR RACHMA</h4>
+</div>
+</div>
+</div>
+</div>
+<!-- Secretary & Treasurer -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-24">
+<div class="text-center group">
+<div class="aspect-[3/4] mb-4 rounded-2xl overflow-hidden bg-surface-container shadow-md transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="secretary 1" src="https://i.ibb.co.com/Ld3kZG04/ey-Jp-ZCI6-Im1f-Njlm-OGE2-MWRh-MDcw-ODE5-MTg2-Mj-Zi-Nzhl-Y2-Y5-Mz-Zj-ODU6c2-Vka-W1lbn-Q6-Ly9h-Nz-I3-ZDVm-OTE2.jpg">
+</div>
+<p class="text-xs font-bold text-secondary mb-1">Sekretaris I</p>
+<h4 class="font-display font-bold text-primary">DEVICHA CAHYA&nbsp; N.P</h4>
+</div>
+<div class="text-center group">
+<div class="aspect-[3/4] mb-4 rounded-2xl overflow-hidden bg-surface-container shadow-md transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="secretary 2" src="https://i.ibb.co.com/1fSHZKCY/Whats-App-Image-2026-05-04-at-19-54-32.jpg">
+</div>
+<p class="text-xs font-bold text-secondary mb-1">Sekretaris II</p>
+<h4 class="font-display font-bold text-primary">SOFIA NURUL HIKMAH</h4>
+</div>
+<div class="text-center group">
+<div class="aspect-[3/4] mb-4 rounded-2xl overflow-hidden bg-surface-container shadow-md transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="treasurer 1" src="https://i.ibb.co.com/sdVNCHNP/Whats-App-Image-2026-05-04-at-19-54-41.jpg">
+</div>
+<p class="text-xs font-bold text-secondary mb-1">Bendahara I</p>
+<h4 class="font-display font-bold text-primary">NADIFATUL HUMAIROH</h4>
+</div>
+<div class="text-center group">
+<div class="aspect-[3/4] mb-4 rounded-2xl overflow-hidden bg-surface-container shadow-md transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="treasurer 2" src="https://i.ibb.co.com/m5snd6dw/Whats-App-Image-2026-05-04-at-19-54-43.jpg">
+</div>
+<p class="text-xs font-bold text-secondary mb-1">Bendahara II</p>
+<h4 class="font-display font-bold text-primary">KAMILATUN NASIHA</h4>
+</div>
+</div>
+<!-- Divisions -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="bg-surface-container-high p-6 rounded-xl flex flex-col items-center group">
+<div class="w-full aspect-[3/4] mb-4 rounded-xl overflow-hidden bg-surface-container shadow transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="Sie Satpras Photo" src="https://i.ibb.co.com/HTR3hqmR/Whats-App-Image-2026-05-04-at-19-54-22.jpg">
+</div>
+<span class="material-symbols-outlined text-primary mb-2" data-icon="inventory_2">inventory_2</span>
+<h5 class="text-[10px] font-bold text-secondary tracking-widest uppercase mb-1">Sie Sarpras</h5>
+<p class="font-display font-bold text-primary text-center">YULI</p>
+</div>
+<div class="bg-surface-container-high p-6 rounded-xl flex flex-col items-center group">
+<div class="w-full aspect-[3/4] mb-4 rounded-xl overflow-hidden bg-surface-container shadow transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="Sie Tekpram Photo" src="https://i.ibb.co.com/KcvB7ZKc/Whats-App-Image-2026-05-04-at-19-54-26.jpg">
+</div>
+<span class="material-symbols-outlined text-primary mb-2" data-icon="settings_suggest">settings_suggest</span>
+<h5 class="text-[10px] font-bold text-secondary tracking-widest uppercase mb-1">Sie Tekpram</h5>
+<p class="font-display font-bold text-primary text-center">VANO DWI P.</p>
+</div>
+<div class="bg-surface-container-high p-6 rounded-xl flex flex-col items-center group">
+<div class="w-full aspect-[3/4] mb-4 rounded-xl overflow-hidden bg-surface-container shadow transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="Sie Litbang Photo" src="https://i.ibb.co.com/M5Sp3ptk/Whats-App-Image-2026-05-04-at-19-53-44.jpg">
+</div>
+<span class="material-symbols-outlined text-primary mb-2" data-icon="psychology">psychology</span>
+<h5 class="text-[10px] font-bold text-secondary tracking-widest uppercase mb-1">Sie Litbang</h5>
+<p class="font-display font-bold text-primary text-center">WULAN FITRI R.<br></p>
+</div>
+<div class="bg-surface-container-high p-6 rounded-xl flex flex-col items-center group">
+<div class="w-full aspect-[3/4] mb-4 rounded-xl overflow-hidden bg-surface-container shadow transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="Sie TIK Photo" src="https://i.ibb.co.com/NdKFgwsN/Whats-App-Image-2026-05-04-at-19-54-19.jpg">
+</div>
+<span class="material-symbols-outlined text-primary mb-2" data-icon="computer">computer</span>
+<h5 class="text-[10px] font-bold text-secondary tracking-widest uppercase mb-1">Sie TIK</h5>
+<p class="font-display font-bold text-primary text-center">NUR THALITA S.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+ <!-- Testimoni -->
+<div class="mb-16">
+  <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">
+  
+  </h4>
+
+  
+  </div>
+</div>
+<footer class="bg-[#361F1A] text-white">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 gap-8 max-w-7xl mx-auto">
+<div class="flex flex-col gap-4 text-center md:text-left">
+<span class="text-xl font-bold text-[#FDD400] font-headline">PRASKANAM</span>
+<p class="font-['Inter'] text-sm tracking-wide uppercase font-medium text-white/60">
+                © 2024 SMK Negeri 6 JEMBER .
+            </p>
+</div>
+<div class="flex gap-8">
+<a class="group transition-transform hover:scale-110" href="https://www.instagram.com/pramukasmkn6jember?igsh=aHl5Y2cxaGhhNm4y"><svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C8.74 0 8.333.015 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.74 0 12s.014 3.667.072 4.947c.2 4.353 2.62 6.777 6.98 6.981 1.281.058 1.688.072 4.948.072s3.667-.014 4.947-.072c4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.26-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.26 0 12 0zm0 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="#E1306C"></path></svg></a>
+<a class="group transition-transform hover:scale-110" href="https://www.tiktok.com/@pramukasmkn6jember?_r=1&_t=ZS-965Ani4cbJN">
+<svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path class="text-white" d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.232 10.724 6.33 6.33 0 0 0 10.744-4.479V7.127a8.212 8.212 0 0 0 5.235 2.879V6.51a4.781 4.781 0 0 1-1.514.176z" fill="currentColor"></path>
+<path d="M12.374 2v4.686a4.793 4.793 0 0 0 3.77 4.245V7.445a8.212 8.212 0 0 1-5.235-2.879v8.546a6.33 6.33 0 0 1-10.744 4.479 6.329 6.329 0 0 1 5.232-10.724v3.5a2.895 2.895 0 0 0-3.183 4.51l-.002-.001.002.001a2.896 2.896 0 0 0 5.201-1.743V2h4.959z" fill="#25F4EE" style="mix-blend-mode: screen;"></path>
+<path d="M12.374 2v4.686a4.793 4.793 0 0 0 3.77 4.245V7.445a8.212 8.212 0 0 1-5.235-2.879v8.546a6.33 6.33 0 0 1-10.744 4.479 6.329 6.329 0 0 1 5.232-10.724v3.5a2.895 2.895 0 0 0-3.183 4.51l-.002-.001.002.001a2.896 2.896 0 0 0 5.201-1.743V2h4.959z" fill="#FE2C55" style="mix-blend-mode: multiply;"></path>
+</svg>
+</a>
+<a class="group transition-transform hover:scale-110" href="https://youtube.com/@smkn1tanggul?si=-EhU1aQkwUhq0B-P"><svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z" fill="#FF0000"></path><path d="M9.545 15.568V8.432L15.818 12l-6.273 3.568z" fill="#FFFFFF"></path></svg></a>
+</div>
+</div>
+</footer>
+<!-- Floating Button WhatsApp -->
+ 
+<a class="fixed bottom-8 right-8 z-[100] bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform active:scale-95 flex items-center justify-center" href="https://wa.me/6282141454543" target="_blank">
+<svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .018 5.396.015 12.03c0 2.12.554 4.189 1.605 6.006L0 24l6.117-1.604a11.803 11.803 0 005.927 1.598h.005c6.637 0 12.032-5.395 12.035-12.03a11.8 11.8 0 00-3.522-8.423"></path></svg></a>
+<script>
+    // Visitor counter
+    let visitorCount = localStorage.getItem('visitorCount') || 0;
+    visitorCount = parseInt(visitorCount) + 1;
+    localStorage.setItem('visitorCount', visitorCount);
+    document.getElementById('count').textContent = visitorCount;
+</script>
+</body></html>
